@@ -4,5 +4,5 @@ config.json
     "discord_token": "Your_Bot_Token",
     "news_api_key": "Your_news_Api_key",
     "ai_api_key": "Your_Ai_Api_key",
-    "default_articles_limit": 3
+    "default_articles_limit": "Your_Articles_Limit"
 }
