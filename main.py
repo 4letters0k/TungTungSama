@@ -1,7 +1,6 @@
 import discord, json
 from discord.ext import commands
 
-from news_fetch import fetch_tech_news
 from summarizer import summarize_news
 
 # Load config
@@ -30,8 +29,15 @@ async def on_ready():
 @bot.command()
 async def news(ctx): # ctx ประกอบไปด้วย ชื่อ ข้อความ channel 
 
+    from news_fetch import fetch_tech_news
+
     await ctx.send("⏳ กำลังดึงข่าวเทคโนโลยีและสรุปให้ครับ Tung~Tung~ 💫")
     articles = fetch_tech_news(config["news_api_key"])
+
+    # ไม่เจอข่าวใหม่แล้ว หรือ articles = []
+    if not articles:
+        await ctx.send("📰 วันนี้ TungTungSama ไม่มีข่าวใหม่แล้วนะ! ลองใหม่พรุ่งนี้ 😎")
+        return
 
     for a in articles:
         
