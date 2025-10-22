@@ -56,7 +56,7 @@ def fetch_tech_news(api_key, default_articles_limit, art_limit): # ดึงข�
     total_news = len(new_articles)
 
     if not new_articles:
-        return []
+        return [], ""
 
     new_articles.sort(key=lambda a: a.get("publishedAt", ""), reverse=True)
     #random.shuffle(new_articles)
