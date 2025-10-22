@@ -34,6 +34,7 @@ async def guide(ctx):
 async def news(ctx, arg=config["default_articles_limit"]): # ctx ประกอบไปด้วย ชื่อ ข้อความ channel 
 
     from news_fetch import fetch_tech_news
+    print(arg)
 
     await ctx.send("⏳ กำลังดึงข่าวเทคโนโลยีและสรุปให้ครับ Tung~Tung~ 💫")
     articles, special_text = fetch_tech_news(config["news_api_key"], config["default_articles_limit"], arg)
