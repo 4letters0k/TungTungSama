@@ -7,30 +7,36 @@ config.json
     "default_articles_limit": "Your_Articles_Limit"
 }
 
-# 🤖 TungTungSama – AI News Summary Discord Bot
+# 🤖 TungTungSama – บอทสรุปข่าวเทคโนโลยีด้วย AI บน Discord
 
-TungTungSama is a Discord bot built with **Python** that automatically fetches the latest **technology news**, summarizes them using **Gemini AI**, and sends concise summaries directly into your Discord channel — all in a friendly and stylish tone.
+**TungTungSama** เป็นบอท Discord ที่พัฒนาด้วยภาษา **Python**  
+สามารถดึงข่าวเทคโนโลยีจากแหล่งข่าวที่น่าเชื่อถือผ่าน API แล้วใช้ **Gemini AI** สรุปข่าวให้อ่านเข้าใจง่ายในไม่กี่บรรทัด  
+ก่อนจะส่งสรุปกลับมาที่ช่องแชทบน Discord โดยอัตโนมัติ 🎯
 
-> 📰 “Your personal tech news assistant — simple, smart, and never repeats old stories!”
-
----
-
-## 🌟 Features
-
-- 🔹 **Fetches tech news** automatically from reliable sources via public API  
-- 🔹 **Summarizes news using Gemini AI (Gemini 2.0 Flash)**  
-- 🔹 **Customizable number of summaries** — e.g. `!news 3` to get 3 news summaries  
-- 🔹 **Smart caching system** — remembers read news and avoids duplicates  
-- 🔹 **Natural and friendly conversation style** (TungTungSama’s personality!)  
-- 🔹 **Built modularly** using `main.py` (Discord handler) and `news_fetch.py` (API logic)
+> 📰 “ผู้ช่วยส่วนตัวของคุณในการติดตามข่าวเทคโนโลยี — ฉลาด กระชับ และไม่สรุปข่าวซ้ำ!”
 
 ---
 
-## 🛠️ Technologies Used
+## 🌟 คุณสมบัติเด่น (Features)
 
-| Component | Description |
-|------------|--------------|
-| **Language** | Python 3 |
-| **Libraries** | `discord.py`, `requests`, `google-generativeai`, `json`, `datetime`, `os` |
-| **AI Model** | Gemini 2.0 Flash (Google Generative AI API) |
-| **Platform** | Discord Bot |
+- 🔹 **ดึงข่าวเทคโนโลยีล่าสุด** ผ่าน API จากแหล่งข้อมูลที่น่าเชื่อถือ  
+- 🔹 **สรุปข่าวด้วย AI (Gemini 2.0 Flash)** ให้เข้าใจง่ายใน 2–3 บรรทัด  
+- 🔹 **กำหนดจำนวนข่าวได้เอง** เช่น `!news 3` เพื่อให้สรุปข่าว 3 ข่าว  
+- 🔹 **จดจำข่าวที่เคยสรุปแล้ว** เพื่อไม่ให้แสดงข่าวซ้ำ  
+- 🔹 **ตอบกลับด้วยภาษาที่เป็นมิตรและมีเอกลักษณ์เฉพาะของ TungTungSama**  
+- 🔹 โครงสร้างโค้ดแบบแยกโมดูล (`main.py`, `news_fetch.py`) เพื่อความเป็นระเบียบ  
+
+---
+
+## 🛠️ เทคโนโลยีที่ใช้
+
+| ส่วนประกอบ | รายละเอียด |
+|--------------|-------------|
+| **ภาษาโปรแกรม** | Python 3 |
+| **ไลบรารีหลัก** | `discord.py`, `requests`, `google-generativeai`, `json`, `datetime`, `os` |
+| **โมเดล AI** | Gemini 2.0 Flash (Google Generative AI API) |
+| **แพลตฟอร์ม** | Discord Bot |
+
+---
+
+## 📁 โครงสร้างโปรเจกต์
