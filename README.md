@@ -40,13 +40,14 @@ config.json
 ---
 
 ## 📁 โครงสร้างโปรเจกต์
+```
 TungTungSama
 ├── main.py # จัดการคำสั่งจาก Discord
 ├── news_fetch.py # ดึงและประมวลผลข่าวจาก API
 ├── read_news.json # เก็บ URL ข่าวที่สรุปไปแล้ว (กันข่าวซ้ำ)
 ├── requirements.txt # ไลบรารีที่จำเป็น
 └── README.md # เอกสารอธิบายโปรเจกต์
-
+```
 ---
 
 ## 🚀 วิธีการทำงาน
